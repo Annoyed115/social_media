@@ -297,7 +297,7 @@ function timeAgo($datetime) {
                                     
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" value="<?= htmlspecialchars($user['email']) ?>" required>
+                                        <input type="email" class="form-control" id="email" name="email" value="<?= htmlentities($user['email'], ENT_QUOTES, 'UTF-8') ?>" placeholder="Enter your email" required>
                                     </div>
                                     
                                     <hr class="my-4">
